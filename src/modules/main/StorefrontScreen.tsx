@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@rneui/themed';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { NavigationActionHelper } from '../../routes/NavigateActionHelper';
 import { MainTabRouteProps } from '../../types/navigation-types';
 
 export function StorefrontScreen(props: MainTabRouteProps<'Storefront'>) {
@@ -37,6 +38,20 @@ export function StorefrontScreen(props: MainTabRouteProps<'Storefront'>) {
         title="Account tab - Login screen"
         onPress={() => {
           props.navigation.navigate('Account', { screen: 'Login' });
+        }}
+      />
+
+      <Button
+        title="NavActionHelper.navigate - Account tab - Login screen"
+        onPress={() => {
+          NavigationActionHelper.navigate('Account', { screen: 'Login' });
+        }}
+      />
+
+      <Button
+        title="NavActionHelper.push - Account tab - Login screen"
+        onPress={() => {
+          NavigationActionHelper.push('Account', { screen: 'Login' });
         }}
       />
     </SafeAreaView>
