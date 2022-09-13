@@ -1,7 +1,7 @@
 [/] TypeScript
 [/] ESLint / Prettier / lint-staged / husky
 [/] import order
-react-navigation
+[/] react-navigation
 Tailwind
 React Query
 redux toolkit
@@ -16,13 +16,9 @@ Apple authentication
 
 -- 
 
-need to use jumping to other tabs on react-navigation and screenoptions typings
-	-extract to separate navigation types
 Change react-native-paper
 test react-hooks if still needed
 app.json bundle identify, buildnumbers
-fix warnings
-redo drawer
 lottie react native
 
 ---
