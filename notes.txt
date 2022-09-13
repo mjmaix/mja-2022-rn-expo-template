@@ -1,0 +1,44 @@
+[/] TypeScript
+[/] ESLint / Prettier / lint-staged / husky
+[/] import order
+react-navigation
+Tailwind
+React Query
+redux toolkit
+	* configured typescript defaults
+react native elements
+react-native-safe-area-context
+anti cyclic dependency
+
+--
+
+Apple authentication
+
+-- 
+
+need to use jumping to other tabs on react-navigation and screenoptions typings
+	-extract to separate navigation types
+Change react-native-paper
+test react-hooks if still needed
+app.json bundle identify, buildnumbers
+fix warnings
+redo drawer
+lottie react native
+
+---
+config plugins
+react-native-fast-image, react-native-blurhash, react-native-date-picker, and @react-native-voice/voice
+Stripe: stripe/stripe-react-native
+NFC: react-native-nfc-manager
+HealthKit: react-native-health
+Voice: react-native-voice/voice
+Bluetooth: react-native-ble-plx
+Available with @config-plugins/react-native-ble-plx. Upstream integration in progress.
+WebRTC: react-native-webrtc
+Available with @config-plugins/react-native-webrtc. Upstream integration in progress.
+
+-- try
+
+expo app.json - android.softwareKeyboardLayoutMode
+expo app.json - android.allowBackup
+expo optional new LogBox error and warning experience
