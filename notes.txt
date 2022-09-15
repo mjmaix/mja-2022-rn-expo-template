@@ -4,11 +4,11 @@
 [/] react-navigation
 Tailwind
 React Query
-redux toolkit
+[/] redux toolkit
 	* configured typescript defaults
 react native elements
 react-native-safe-area-context
-anti cyclic dependency
+[/] anti cyclic dependency - already in react-native
 
 --
 

@@ -7,6 +7,7 @@ export type MainStackParamList = {
   Search: { query?: string };
   Product: { id: number };
   Error: { message?: string };
+  Counter: undefined;
 };
 
 export type FeedStackParamList = {

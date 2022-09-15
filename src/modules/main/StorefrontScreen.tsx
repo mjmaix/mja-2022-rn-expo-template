@@ -54,6 +54,13 @@ export function StorefrontScreen(props: MainTabRouteProps<'Storefront'>) {
           NavigationActionHelper.push('Account', { screen: 'Login' });
         }}
       />
+
+      <Button
+        title="Counter screen - demo"
+        onPress={() => {
+          props.navigation.navigate('Counter');
+        }}
+      />
     </SafeAreaView>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { CounterScreen } from '../../modules/counter/components/CounterScreen';
 import { ErrorScreen } from '../../modules/main/ErrorScreen';
 import { ProductScreen } from '../../modules/main/ProductScreen';
 import { SearchScreen } from '../../modules/main/SearchScreen';
@@ -17,6 +18,7 @@ export function MainStackScreen() {
       <MainStack.Screen name="Search" component={SearchScreen} />
       <MainStack.Screen name="Product" component={ProductScreen} />
       <MainStack.Screen name="Error" component={ErrorScreen} />
+      <MainStack.Screen name="Counter" component={CounterScreen} />
     </MainStack.Navigator>
   );
 }
