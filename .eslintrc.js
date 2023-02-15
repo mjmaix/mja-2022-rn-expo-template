@@ -5,8 +5,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    'plugin:react-native/all',
   ],
-  plugins: ['import', 'unused-imports'],
+  plugins: ['import', 'unused-imports', 'react-native'],
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
@@ -21,6 +22,19 @@ module.exports = {
   },
   rules: {
     'max-len': ['error', { code: 120 }],
+    'prettier/prettier': [
+      'error',
+      {
+        tabWidth: 2,
+        bracketSpacing: true,
+        jsxBracketSameLine: true,
+        singleQuote: true,
+        trailingComma: 'all',
+        printWidth: 120,
+        endOfLine: 'auto',
+        bracketSameLine: true,
+      },
+    ],
     'import/order': [
       'error',
       {
@@ -47,5 +61,11 @@ module.exports = {
       'warn',
       { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
     ],
+    'react-native/no-unused-styles': 2,
+    'react-native/split-platform-components': 2,
+    'react-native/no-inline-styles': 2,
+    'react-native/no-color-literals': 0,
+    'react-native/no-raw-text': 2,
+    'react-native/no-single-element-style-arrays': 2,
   },
 };
